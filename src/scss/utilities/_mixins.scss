@@ -1,0 +1,13 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+
+/* A function that converts pixels to rems. */
+@function scut-strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem($pixels) {
+  @return scut-strip-unit($pixels) / $scut-rem-base * 1rem;
+}
