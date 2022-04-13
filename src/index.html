@@ -10,34 +10,75 @@
   <title>Admin | Dashboard</title>
   <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 
-  <!-- Material Icons Start  -->
+  <!-- Material Icons   -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-  <!-- Material Icons End  -->
 
-  <!-- Bootstrap CSS Start  -->
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS   -->
   <link rel="stylesheet" href="scss/vendors/bootstrap.min.css">
-  <!-- Bootstrap CSS End  -->
 
-  <!-- Custom CSS Start  -->
+  <!-- Custom CSS   -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Custom CSS End  -->
 </head>
 
 <body>
-  <div class="container">
-    <span class="material-icons-sharp">
-      home
-    </span>
-    <h1 class="bg-danger text-white p-3">hello</h1>
-  </div>
+  <!-- Header  -->
+  <header class="header bg-white">
+    <div class="container">
+      <nav class="header__nav  " aria-labelledby="header__img">
+        <!-- Brand  -->
+        <img src="images/logo.png" alt="Name of the company" class="header__logo">
+        <!-- Search Bar -->
+        <div class="header__search-bar">
+          <span class="material-icons-sharp">
+            search
+          </span>
+          <input type="search" placeholder="Search">
+        </div>
 
-  <!-- Bootstrap bundle Start  -->
+        <div class="header__profile-area">
+          <!-- Dark/White Mode  -->
+          <div class="header__theme-btn">
+            <span class="material-icons-sharp active">
+              light_mode
+            </span>
+            <span class="material-icons-sharp">
+              dark_mode
+            </span>
+          </div>
+
+          <div class="header__profile">
+            <!-- User Profile  -->
+            <div class="header__profile-photo">
+              <img loading="lazy" src="images/profile-1.jpg" alt="Profile Picture" title="Rohit Kumar" />
+            </div>
+            <!-- User Name  -->
+            <h5>Rohit</h5>
+            <span class="material-icons-sharp">
+              expand_more
+            </span>
+          </div>
+          <!-- Hamburger  -->
+          <button>
+            <span class="material-icons-sharp">
+              menu
+            </span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Bootstrap bundle   -->
   <script src="scss/vendors/bootstrap.bundle.min.js"></script>
-  <!-- Bootstrap bundle End  -->
 
-  <!-- Custom JS Start -->
+  <!-- Custom JS  -->
   <script src="js/script.js"></script>
-  <!-- Custom JS End -->
 </body>
 
 </html>

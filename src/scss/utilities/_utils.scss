@@ -1,0 +1,75 @@
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+p {
+  color: $color-gray-dark;
+  font-size: 0.86rem;
+}
+
+small {
+  font-size: 0.77rem;
+  font-weight: 300;
+}
+
+.text-muted {
+  color: $color-gray-light;
+}
+
+.primary {
+  color: $color-primary;
+}
+
+.success {
+  color: $color-success;
+}
+
+.danger {
+  color: $color-danger;
+}
+
+.purple {
+  color: $color-purple;
+}
+
+.bg-primary {
+  background: $color-primary;
+  box-shadow: 0 0.8rem 0.8rem $color-primary-light;
+}
+
+.bg-success {
+  background: $color-success;
+  box-shadow: 0 0.8rem 0.8rem $color-success-light;
+}
+
+.bg-danger {
+  background: $color-danger;
+  box-shadow: 0 0.8rem 0.8rem $color-danger-light;
+}
+
+.bg-purple {
+  background: $color-purple;
+  box-shadow: 0 0.8rem 0.8rem $color-purple-light;
+}
+
+.bg-dark {
+  background: $color-dark;
+  box-shadow: 0 0.8rem 0.8rem rgba($color-black, 0.2);
+}

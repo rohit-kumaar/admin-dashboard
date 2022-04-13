@@ -1,0 +1,85 @@
+.header {
+  &__nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+  }
+
+  &__logo {
+    width: 7rem;
+  }
+
+  &__search-bar {
+    position: absolute;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 32vw;
+    padding: $padding-2 $card-padding;
+    border-radius: $border-radius-2;
+    background: $color-light;
+    color: $color-gray-light;
+
+    input[type="search"] {
+      width: 100%;
+      background: transparent;
+      color: $color-dark;
+
+      &::placeholder {
+        color: $color-gray-dark;
+      }
+    }
+  }
+
+  &__profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  &__theme-btn {
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    background: $color-light;
+    border-radius: $border-radius-2;
+    cursor: pointer;
+
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      font-size: 1.3rem;
+
+      &.active {
+        border-radius: $border-radius-2;
+        background: $color-dark;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-photo {
+      display: block;
+      width: 3rem;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  & button {
+    display: none;
+  }
+}
