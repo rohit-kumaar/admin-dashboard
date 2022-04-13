@@ -1,0 +1,10 @@
+.middle {
+  //   Middle Canvas Chart
+  &__chart {
+    max-width: 100%;
+    padding: $card-padding;
+    border-radius: $card-border-radius;
+    margin-top: 2rem;
+    background: $color-white;
+  }
+}
