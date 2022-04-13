@@ -1,2 +1,105 @@
 .right {
+  // Investments
+  .investments {
+    height: fit-content;
+    border-radius: $card-border-radius;
+    background: $color-white;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: $card-padding;
+      padding-bottom: 0;
+
+      & a {
+        display: flex;
+        align-items: center;
+        color: $color-primary;
+      }
+    }
+
+    &__investment {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: $card-padding;
+      border-bottom: 1px solid $color-light;
+      transition: all 300ms ease;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background: $color-light;
+        cursor: pointer;
+      }
+
+      & img {
+        width: 2.4rem;
+      }
+    }
+  }
+
+  //   Recent Transactions
+  .transactions {
+    margin-top: 2rem;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      & a{
+          display: flex;
+          align-items: center;
+          color: $color-primary;
+      }
+    }
+
+    &__service {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      padding: $padding-2;
+      border-radius: $border-radius-1;
+    }
+
+    &__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4.6rem;
+      height: 3rem;
+      border-radius: $border-radius-2;
+
+      &-details {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      & img {
+        width: 2.2rem;
+      }
+    }
+
+    &__transaction {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem $card-padding;
+      border-radius: $card-border-radius;
+      transition: all 300ms ease;
+
+      &:hover {
+        background: $color-white;
+        cursor: pointer;
+      }
+    }
+  }
 }

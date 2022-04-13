@@ -1,5 +1,4 @@
 .header {
-  
   &__nav {
     position: relative;
     display: flex;
@@ -15,7 +14,7 @@
   &__search-bar {
     position: absolute;
     left: 15%;
-    display: flex;
+    display: none;
     align-items: center;
     gap: 1rem;
     width: 32vw;
@@ -23,6 +22,10 @@
     border-radius: $border-radius-2;
     background: $color-light;
     color: $color-gray-light;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
 
     input[type="search"] {
       width: 100%;
@@ -40,6 +43,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
+
+    @include media-breakpoint-up(lg) {
+      gap: 2rem;
+    }
   }
 
   &__theme-btn {
@@ -81,6 +88,12 @@
   }
 
   & button {
-    display: none;
+    display: inline;
+    background: transparent;
+    color: $color-dark;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
   }
 }

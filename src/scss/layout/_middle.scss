@@ -1,4 +1,10 @@
 .middle {
+  margin-top: 76px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+
   // Middle Header
   &__header {
     display: flex;

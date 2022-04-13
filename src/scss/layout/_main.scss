@@ -1,7 +1,11 @@
 .main {
   display: grid;
-  grid-template-columns: 16rem auto 28rem;
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 1rem;
   margin-bottom: 4rem;
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 16rem auto 30rem;
+  }
 }
