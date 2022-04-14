@@ -42,7 +42,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 2.6rem;
+
+    @include media-breakpoint-up(sm) {
+      gap: 4rem;
+    }
 
     @include media-breakpoint-up(lg) {
       gap: 2rem;
@@ -84,6 +88,15 @@
       aspect-ratio: 1 / 1;
       border-radius: 50%;
       overflow: hidden;
+    }
+
+    & h5,
+    & span {
+      display: none;
+
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
     }
   }
 

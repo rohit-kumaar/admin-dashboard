@@ -44,17 +44,21 @@
 
   //   Recent Transactions
   .transactions {
-    margin-top: 2rem;
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 2rem;
+    }
 
     &__header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 1rem;
 
-      & a{
-          display: flex;
-          align-items: center;
-          color: $color-primary;
+      & a {
+        display: flex;
+        align-items: center;
+        color: $color-primary;
       }
     }
 

@@ -7,6 +7,7 @@ document.addEventListener("readystatechange", (event) => {
 
 const initApp = () => {
   chart();
+  sidebar();
 };
 
 // querySelectorAll function
@@ -62,5 +63,19 @@ function chart() {
     options: {
       responsive: true,
     },
+  });
+}
+
+function sidebar() {
+  const menuBtn = qs("#menuBtn");
+  const closeBtn = qs("#closeBtn");
+  const aside = qs("#aside");
+
+  menuBtn.addEventListener("click", () => {
+    aside.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    aside.style.display = "none";
   });
 }

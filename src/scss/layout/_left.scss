@@ -1,14 +1,59 @@
 .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 88vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 3;
+  width: 22rem;
+  height: 100vh;
+  background: $color-white;
+  box-shadow: 2rem 0 2rem $color-primary-light;
+  display: none;
+  animation: showSidebar 0.5s ease forwards;
+
+  @keyframes showSidebar {
+    to {
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: static;
+    z-index: 0;
+    width: 100%;
+    height: 88vh;
+    background: transparent;
+    box-shadow: none;
+  }
 
   &__close-btn {
-    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 1rem;
+    right: 1rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    color: $color-dark;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
   }
 
   &__sidebar {
+    margin-top: 4rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+
     & a {
       position: relative;
       display: flex;
@@ -51,10 +96,15 @@
   }
 
   &__updates {
-    padding: $card-padding;
-    border-radius: $border-radius-1;
-    background: $color-white;
-    text-align: center;
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      padding: $card-padding;
+      border-radius: $border-radius-1;
+      background: $color-white;
+      text-align: center;
+    }
 
     & span {
       font-size: 2.8rem;
