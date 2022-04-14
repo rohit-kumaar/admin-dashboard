@@ -1,20 +1,52 @@
+:root {
+  // For Dark Mode
+  // $color-white: hsl(240, 7%, 8%);
+  // $color-light: hsl(240, 9%, 15%);
+  // $color-dark: hsl(0, 0%, 87%);
+  // $color-gray-dark: hsl(246, 6%, 69%);
+
+  --white-h: 0;
+  --white-s: 0%;
+  --white-l: 100%;
+
+  --light-h: 250;
+  --light-s: 23%;
+  --light-l: 95%;
+
+  --dark-h: 233;
+  --dark-s: 9%;
+  --dark-l: 17%;
+
+  --gray-dark-h: 247;
+  --gray-dark-s: 5%;
+  --gray-dark-l: 35%;
+
+  --color-white: hsl(var(--white-h), var(--white-s), var(--white-l));
+  --color-light: hsl(var(--light-h), var(--light-s), var(--light-l));
+  --color-dark: hsl(var(--dark-h), var(--dark-s), var(--dark-l));
+  --color-gray-dark: hsl(
+    var(--gray-dark-h),
+    var(--gray-dark-s),
+    var(--gray-dark-l)
+  );
+}
+
 // font family
 $primary-font: "Poppins", sans-serif;
 
-
 // Colors
-$color-white: #ffffff; //
-$color-light: #f0eff5; //
-$color-dark: #27282f; //
-$color-gray-dark: #56555e; //
-$color-black: #000000;
-$color-gray-light: #85848b;
+$color-white: var(--color-white);
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+$color-gray-dark: var(--color-gray-dark);
+$color-black: hsl(0, 0%, 0%);
+$color-gray-light: hsl(249, 3%, 53%);
 
-$color-primary: #4707e9;
-$color-success: #22c94c;
-$color-danger: #ff4538;
-$color-warning: #e9b407;
-$color-purple: #9f61f5;
+$color-primary: hsl(257, 94%, 47%);
+$color-success: hsl(135, 71%, 46%);
+$color-danger: hsl(4, 100%, 61%);
+$color-warning: hsl(46, 94%, 47%);
+$color-purple: hsl(265, 88%, 67%);
 
 $color-primary-light: rgba($color-primary, 0.2);
 $color-success-light: rgba($color-success, 0.2);

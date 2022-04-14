@@ -6,7 +6,8 @@ document.addEventListener("readystatechange", (event) => {
 });
 
 const initApp = () => {
-  changeTheme();
+  darkTheme();
+  lightTheme();
   chart();
   sidebar();
 };
@@ -81,11 +82,57 @@ function sidebar() {
   });
 }
 
-function changeTheme() {
-  const changeTheme = qs("#changeTheme");
-  changeTheme.addEventListener("click", () => {
-    document.body.classList.toggle("darkTheme");
+function darkTheme() {
+  const darkMode = qs("#darkMode");
+
+  darkMode.addEventListener("click", () => {
+    Change_root_Property_h_s_l("--white-h", "240");
+    Change_root_Property_h_s_l("--white-s", "7%");
+    Change_root_Property_h_s_l("--white-l", "8%");
+
+    Change_root_Property_h_s_l("--light-h", "240");
+    Change_root_Property_h_s_l("--light-s", "9%");
+    Change_root_Property_h_s_l("--light-l", "15%");
+
+    Change_root_Property_h_s_l("--dark-h", "0");
+    Change_root_Property_h_s_l("--dark-s", "0%");
+    Change_root_Property_h_s_l("--dark-l", "87%");
+
+    Change_root_Property_h_s_l("--gray-dark-h", "246");
+    Change_root_Property_h_s_l("--gray-dark-s", "6%");
+    Change_root_Property_h_s_l("--gray-dark-l", "69%");
+
     qs("span:first-child").classList.toggle("active");
     qs("span:last-child").classList.toggle("active");
   });
+}
+
+function lightTheme() {
+  const lightMode = qs("#lightMode");
+
+  lightMode.addEventListener("click", () => {
+    Change_root_Property_h_s_l("--white-h", "0");
+    Change_root_Property_h_s_l("--white-s", "0%");
+    Change_root_Property_h_s_l("--white-l", "100%");
+
+    Change_root_Property_h_s_l("--light-h", "250");
+    Change_root_Property_h_s_l("--light-s", "23%");
+    Change_root_Property_h_s_l("--light-l", "95%");
+
+    Change_root_Property_h_s_l("--dark-h", "233");
+    Change_root_Property_h_s_l("--dark-s", "9%");
+    Change_root_Property_h_s_l("--dark-l", "17%");
+
+    Change_root_Property_h_s_l("--gray-dark-h", "247");
+    Change_root_Property_h_s_l("--gray-dark-s", "5%");
+    Change_root_Property_h_s_l("--gray-dark-l", "35%");
+
+    qs("span:first-child").classList.toggle("active");
+    qs("span:last-child").classList.toggle("active");
+  });
+}
+
+function Change_root_Property_h_s_l(property, value) {
+  const root = qs(":root");
+  root.style.setProperty(property, value);
 }
