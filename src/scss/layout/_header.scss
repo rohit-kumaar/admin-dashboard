@@ -55,30 +55,6 @@
     }
   }
 
-  &__theme-btn {
-    width: 5rem;
-    height: 2rem;
-    display: flex;
-    background: $color-light;
-    border-radius: $border-radius-2;
-    cursor: pointer;
-
-    & span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      height: 100%;
-      font-size: 1.3rem;
-
-      &.active {
-        border-radius: $border-radius-2;
-        background: $color-dark;
-        color: $color-white;
-      }
-    }
-  }
-
   &__profile {
     display: flex;
     align-items: center;

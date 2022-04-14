@@ -101,9 +101,6 @@ function darkTheme() {
     Change_root_Property_h_s_l("--gray-dark-h", "246");
     Change_root_Property_h_s_l("--gray-dark-s", "6%");
     Change_root_Property_h_s_l("--gray-dark-l", "69%");
-
-    qs("span:first-child").classList.toggle("active");
-    qs("span:last-child").classList.toggle("active");
   });
 }
 
@@ -126,9 +123,6 @@ function lightTheme() {
     Change_root_Property_h_s_l("--gray-dark-h", "247");
     Change_root_Property_h_s_l("--gray-dark-s", "5%");
     Change_root_Property_h_s_l("--gray-dark-l", "35%");
-
-    qs("span:first-child").classList.toggle("active");
-    qs("span:last-child").classList.toggle("active");
   });
 }
 
