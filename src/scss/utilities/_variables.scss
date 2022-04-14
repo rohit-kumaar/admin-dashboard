@@ -1,19 +1,20 @@
 // font family
 $primary-font: "Poppins", sans-serif;
 
-// color
-$color-black: hsl(0, 0%, 0%);
-$color-dark: hsl(233, 9%, 17%);
-$color-white: hsl(0, 0%, 100%);
-$color-light: hsl(250, 23%, 95%);
-$color-gray-light: hsl(255, 3%, 53%);
-$color-gray-dark: hsl(247, 5%, 35%);
 
-$color-primary: hsl(257, 94%, 47%);
-$color-success: hsl(135, 71%, 46%);
-$color-danger: hsl(4, 100%, 61%);
-$color-warning: hsl(46, 94%, 47%);
-$color-purple: hsl(265, 88%, 67%);
+// Colors
+$color-white: #ffffff; //
+$color-light: #f0eff5; //
+$color-dark: #27282f; //
+$color-gray-dark: #56555e; //
+$color-black: #000000;
+$color-gray-light: #85848b;
+
+$color-primary: #4707e9;
+$color-success: #22c94c;
+$color-danger: #ff4538;
+$color-warning: #e9b407;
+$color-purple: #9f61f5;
 
 $color-primary-light: rgba($color-primary, 0.2);
 $color-success-light: rgba($color-success, 0.2);

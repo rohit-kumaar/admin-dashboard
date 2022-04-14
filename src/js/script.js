@@ -6,6 +6,7 @@ document.addEventListener("readystatechange", (event) => {
 });
 
 const initApp = () => {
+  changeTheme();
   chart();
   sidebar();
 };
@@ -77,5 +78,14 @@ function sidebar() {
 
   closeBtn.addEventListener("click", () => {
     aside.style.display = "none";
+  });
+}
+
+function changeTheme() {
+  const changeTheme = qs("#changeTheme");
+  changeTheme.addEventListener("click", () => {
+    document.body.classList.toggle("darkTheme");
+    qs("span:first-child").classList.toggle("active");
+    qs("span:last-child").classList.toggle("active");
   });
 }
